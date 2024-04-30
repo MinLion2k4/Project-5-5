@@ -1,0 +1,219 @@
+
+*{
+    margin : 0;
+   padding : 0;   
+   box-sizing : border-box;
+   font-family : 'Poppins', sans-serif;
+}
+
+body{
+    top: 3px;
+}
+/*Header*/
+/* header{
+    position: relative;
+    width: 1425px;
+    height: 50px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+    background-color: rgb(172, 172, 238);
+} */
+
+.navbar-brand #logo{
+    position: relative;
+    width: 40px;
+    margin-left: 33px;
+}
+
+.navbar-nav{
+    margin-left: 350px;
+    font-size: 18px;
+}
+.nav-item a:hover{
+    color: white;
+}
+
+.navbar-nav a{
+    color: black;
+}
+
+button:hover{
+    color: white;
+}
+
+#nameStore{
+    margin-top: 10px;
+    color: black;
+    
+}
+
+.nav-item{
+    padding: 5px;
+}
+.nav-item p{
+    position: relative;
+    top: 30px;
+}
+
+.d-flex{
+    position: relative;
+    left: 150px;
+}
+.d-flex .form-control{
+    width: 330px;
+    border-radius: 30px;
+}
+.d-flex .btn{
+    border-radius: 30px;
+}
+
+#search-icon{
+    width: 29px;
+}
+
+#login-btn{
+    width: 135px;
+    height: 45px;
+    background: none;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 200px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 550;
+    margin-left: 20px;
+    transition: .5s;
+}
+#login-btn:hover{
+    background-color: white;
+    color: black;
+}
+/*End of Header*/
+/*Login-Page*/
+.container{
+    position: relative;
+    top: 100px;
+    width: 400px;
+    height:440px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .form-box{
+    width : 100%;
+    padding : 40px;
+    background-origin: padding-box;
+}
+.form-box h2{
+    font-size: 2em;
+    font : 'Arial', sans-serif;
+    text-decoration-color: #162938;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom : 2px solid #162938;
+    margin: 30px 0;
+
+}
+
+.input-box label{
+    position: absolute;
+    top : 50%;
+    left : 5px;
+    transform: translateY(-50%);
+    color: #162938;
+    font-weight: 1000;
+    pointer-events: none;
+    font-size : 1em;
+    transition: .5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    top: -5px
+}
+
+.input-box input{
+    width : 100%;
+    height:100%;
+    background: transparent;
+    border: none;
+    outline : none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 1000;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position : absolute;
+    right : 8px;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.remember-fogot{
+    font-size: .9em;
+    color: #162938;
+    font-weight: 600;
+    margin : -15px 0 15px;
+    display: flex;
+    justify-content: space-between
+}
+
+.remember-fogot label input{
+    accent-color: #162938;
+    margin-right: 3px;
+}
+
+.remember-fogot a{
+    text-decoration: none;
+    color: #162938;
+    font-weight: 1000;
+}
+
+.btn-login{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 1000;
+    color: #fff;
+    transition: .5s;
+}
+
+.btn-login:hover{
+    background-color: #fff;
+    color:#162938;
+    font-weight: 1000;
+}
+.login-register{
+    font-size:.9em;
+    color: #162938;
+    font-weight: 600;
+    text-align: center;
+    margin: 25px 0 5px;
+
+}
+
+.login-register a{
+    text-decoration: none;
+    color: #162938;
+    font-weight: 1000;
+}
+/*End of Login-Page*/
