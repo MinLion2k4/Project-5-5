@@ -1,77 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Hải Sản Tươi Sống</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
+  <header>
+    <!--Header Section-->
+    <a href="Home.html" class="logo"><img src="/img/logo6.png" alt="">
+      TUMTH</a>
 
-<nav style="height: 50px; background-color: rgb(141, 171, 255);" class="navbar navbar-expand-sm">
-    
-  <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:void(0)"><img id="logo" src="img/logo6.png" alt=""></a>
-    <h2 id="nameStore">TUMTH</h2>
+    <nav class="navbar">
+      <a href="Home.html" class="active">Trang chủ</a>
+      <a href="#">Sản Phẩm</a>
+      <a href="#">Tin tức</a>
+      <a href="#">Liên Hệ</a>
+    </nav>
 
-    <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Nhập sản phẩm cần tìm...">
-        <button class="btn btn-primary" type="button"><img id="search-icon" src="img/search3.png" alt=""></button>
-      </form>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Trang Chủ</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Sản Phẩm</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Giỏ Hàng</a>        
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Liên Hệ</a>
-        </li>
-      </ul>
-        <button id="login-btn">Login</button>
+    <div class="iconsH">
+      <i class="fas fa-bars" id="menu-bars"></i>
+      <i class="fas fa-search" id="sreach-icon" ></i>
+      <a href="#" class="fas fa-shopping-cart"></a>
+      <a href="Login.html" class="fas fa-user"></a>
     </div>
-  </div>
-</nav>
-<div class="container">
-  <div class="form-box Login">
-      <h2 class="Login">Login</h2>
-      <form action="#">
+  </header>
+  <div class="main" style="background-image: url(/img/bg1.jpg);">
+    <div class="container">
+      <div class="form-box Login">
+          <h2 class="Login">Login</h2>
+          <form action="#">
+              <div class="input-box">
+                  <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                  <input type="email" placeholder="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="lmail" required>
+                  <label>Email</label>
+              </div>
+              <div class="input-box">
+                  <span class="icon"><ion-icon name="key"></ion-icon></span>
+                  <input type="password" placeholder="" minlength="8" id="lpsw" required>
+                  <label>Password</label>
+              </div>
+              <div class="remember-fogot">
+                  <label><input type="checkbox" id="lcheckbox">
+                  Remember me</label> 
+                  <a href="#">Fogot Password?</a>
+              </div>
+              <button type="submit" class="btn" onclick="saveData1()">Login</button>
+              <div class="login-register">
+                  <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+              </div>
+          </form>
+      </div>
+      <div class="form-box Register">
+        <h2  style="position: relative;;top: 10px;">Register</h2>
+        <form action="#">
           <div class="input-box">
-              <span class="icon"><ion-icon name="mail"></ion-icon></span>
-              <input type="email" required>
-              <label>Email</label>
+            <span class="icon"><ion-icon name="person"></ion-icon></span>
+            <input type="text" id="user" minlength="3"  required>
+            <label>User</label>
+        </div>  
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="key"></ion-icon></span>
+                <input type="password" id="psw" minlength="8" placeholder="" required>
+                <label>Password</label>
+            </div>
+            <div class="input-box" id="rps">
+              <span class="icon"><ion-icon name="close" style="width: 30px;"></ion-icon></span>
+              <input type="password" id="re-psw" minlength="8" oninput="checkPasswordMatch()" placeholder="" required>
+              <label>Re-Password</label>
           </div>
-          <div class="input-box">
-              <span class="icon"><ion-icon name="key"></ion-icon></span>
-              <input type="password" required>
-              <label>Password</label>
-          </div>
-          <div class="remember-fogot">
-              <label><input type="checkbox">
-              Remember me</label> 
-              <a href="#">Fogot Password?</a>
-          </div>
-          <button type="submit" class="btn-login">Login</button>
-          <div class="login-register">
-              <p>Don't have an account? <a href="#" class="register">Register</a></p>
-          </div>
-      </form>
+            <div class="remember-fogot">
+                <label><input type="checkbox" id="checkbox">
+                Chấp thuận điều khoản sử dụng</label> 
+            </div>
+            <button type="submit" onclick="saveData()" class="btn">Register</button>
+            <div class="login-register">
+                <p>Have another account? <a href="#" class="login-link">Login</a></p>
+            </div>
+        </form>
+      </div>
+     </div>
   </div>
-</div>
-54321
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
-
-
