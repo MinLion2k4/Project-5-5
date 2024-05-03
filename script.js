@@ -51,6 +51,7 @@ function saveData(){
       alert("Email đã tồn tại");
     }
     else{
+      alert("Đăng kí thành công");
       user_records.push({
         "user":user,
         "mail":mail,
@@ -61,21 +62,3 @@ function saveData(){
 }
 
 /*----------------- Kiem tra form dang nhap -----------------*/
-function saveData1(){
-    let mail = document.getElementById('lmail').value;
-    let psw = document.getElementById('lpsw').value;
-    let checkbox = document.getElementById('lcheckbox');
-    if(mail==""||psw==""){
-      alert("Vui lòng điền đầy đủ thông tin");
-      return;
-    }
-    let user_records=JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[];
-    if(user_records.some((v)=>{
-      return v.mail==mail&&v.psw==psw;
-    })){
-      alert("Đăng nhập thành công");
-    }
-    else{
-      alert("Sai thông tin đăng nhập");
-    }
-}

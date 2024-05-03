@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Pacifico&display=swap');
+:root{
+    --green: #27ae60;
+    --red: #c0392b;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2 linear;
+}   
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    background: #89a7ce;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    text-decoration: none;
+}
+
+header .logo{
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+    /* text-align: center; */
+    display: flex;
+    position: relative;
+    top: .5rem;
+    font-family: "Lemonada", cursive;
+}
+
+header .logo img{
+    position: relative;
+    top: -5px;
+    width: 50px;
+    height: 50px;
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    margin: .2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header .navbar .active,
+header .navbar a:hover{
+    background: rgba(0,0,0,.1);
+    color: white;
+}
+
+header .iconsH i,
+header .iconsH a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: black;
+    border-radius: 50%;
+    text-decoration: none;
+    background: rgba(0,0,0,.1);
+    transform: 0.2s;
+}
+header .iconsH i:hover,
+header .iconsH a:hover{
+    background: rgba(0,0,0,.2);
+    color: white;
+    transform: matrix(1.1,0,0,1.1,0,0);
+}
+
+header .iconsH #menu-bars{
+    display: none;
+}
+header .iconsH .fas.fa-user.active{
+    width: 4.5rem;
+    border-radius: 0;
+}
+
+.main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+
+/*footer*/
+.grid_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid_column{
+    margin-top: 20px;
+    padding: 20px;
+    width: 18%;
+}
+
+.footer{
+    padding-top: 12px;
+    border-top: 2px solid rgba(3, 1, 36, 0.1);
+    /* border-top: 4px solid blue; */
+}
+
+.ft_heading{
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.ft_list{
+    padding-left: 0;
+    list-style: none;
+}
+
+.ft_item_link{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(66, 64, 64);
+    padding: 2px 0;
+}
+
+.ft_item_link:hover{
+   color:#89a7ce;
+}
+
+.ft_icon{
+    width: 20px;
+    margin: -1px 8px 0 0;
+} 
+
+.ft_download1{
+    height: 65px;
+    width: 135px;
+    margin-left: -7px;
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+
+.ft_download2{
+    width: 120px;
+}
+
+.ft_bottom{
+    padding: 8px 0;
+    background-color: rgb(250, 244, 244);
+    margin-top: 30px;
+}
+
+.ft_bottom_text{
+    text-align: center;
+    font-size: 1.2rem;
+}
