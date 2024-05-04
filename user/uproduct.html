@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/public/product2.css">
+  <link rel="stylesheet" href="uheader.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <!--Header-->
+  <header>
+    <!--Header Section-->
+    <a href="uhome.html" class="logo"><img src="/assets/imgs/logo6.png" alt="">
+      TUMTH</a>
+    <nav class="navbar">
+      <a href="uhome.html">Trang chủ</a>
+      <a href="uproduct.html" class="active">Sản Phẩm</a>
+      <a href="#news">Tin tức</a>
+      <a href="#footer">Liên Hệ</a>
+      <div id="changePasswordModal" class="modal">
+        <div class="modal-content">
+            <h2>Đổi mật khẩu</h2>
+            <label for="oldPassword">Mật khẩu cũ:</label><br>
+            <input type="password" id="oldPassword" name="oldPassword"><br>
+            <label for="newPassword">Mật khẩu mới:</label><br>
+            <input type="password" id="newPassword" name="newPassword"><br>
+            <button onclick="changePassword()">Xác nhận</button>
+        </div>
+    </div>
+    </nav>
+    <div class="iconsH">
+      <i class="fas fa-bars" id="menu-bars"></i>
+      <i class="fas fa-search" id="sreach-icon" ></i>
+      <a href="#" class="fas fa-shopping-cart"></a>
+      <div class="dropdown">
+        <i class="fas fa-user dropdown-toggle" id="dropdownMenuButton"></i>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <p class="dropdown-item" href="#" id="username">Tên user :  </p>
+          <p><button id="changePasswordButton">Đổi mật khẩu</button></p>
+          <p class="dropdown-item" href="#" onclick="logout()">Logout
+            <i class="fa-solid fa-right-from-bracket"></i>
+          </p>
+        </div>
+      </div>     
+      <script>
+        document.getElementById('dropdownMenuButton').addEventListener('click', function (event) {
+          event.stopPropagation();
+          this.nextElementSibling.classList.toggle('show');
+        });
+      
+        window.addEventListener('click', function () {
+          let dropdowns = document.getElementsByClassName('dropdown-menu');
+          for (let i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        });
+        var modal = document.getElementById("changePasswordModal");
+    var btn = document.getElementById("changePasswordButton");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    function changePassword() {
+        // Logic to change password goes here
+        modal.style.display = "none";
+    }
+      </script>
+    </div>
+  </header>
+    <!--End Header-->
+    <div class="container py-5">
+        <h1 class="text-center">Sản Phẩm</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4 py-5" id="product-list">
+
+        </div>
+    </div>
+    <div id="blog-home" class="pt-5 mt-5 container">
+        <h2 class="font-weight-bold pt-5">Giỏ Hàng</h2>
+        <hr>
+    </div>
+
+    <div id="cart-container" class="container my-5">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Sản Phẩm</td>
+                    <td>Mô Tả</td>
+                    <td>Giá</td>
+                    <td>Số Lượng</td>
+                    <td>Thành Tiền</td>
+                    <td>Xóa</td>
+                </tr>
+            </thead>
+            <tbody id="cart-table-body"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5" id="total">Tổng Tiền</td>
+                    <td id="total-price">0</td>
+                </tr>
+        </table>
+    </div>
+<!--Footer-->
+<footer class="footer" id="footer">
+    <div class="grid">
+        <div class="grid_row">
+            <div class="grid_column">
+                <h3 class="ft_heading"> Về chúng tôi</h3>
+                <ul class="ft_list">
+                    <li class="ft_item">
+                        <a href="#" class="ft_item_link">Giới thiệu</a>
+                    </li>
+                    <li class="ft_item" >
+                        <a href="#" class="ft_item_link">Hệ thống cửa hàng</a>
+                    </li>
+                    <li  class="ft_item">
+                        <a href="#" class="ft_item_link">Tuyển dụng</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid_column">
+                <h3 class="ft_heading"> Trợ giúp</h3>
+                <ul class="ft_list">
+                    <li class="ft_item">
+                        <a href="#" class="ft_item_link">Trung tâm trợ giúp</a>
+                    </li>
+                    <li class="ft_item" >
+                        <a href="#" class="ft_item_link">Hướng dẫn mua hàng</a>
+                    </li>
+                    <li  class="ft_item">
+                        <a href="#" class="ft_item_link">Giao nhận hàng</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid_column">
+                <h3 class="ft_heading">Danh mục</h3>
+                <ul class="ft_list">
+                    <li class="ft_item">
+                        <a href="#" class="ft_item_link">Chính sách</a>
+                    </li>
+                    <li class="ft_item" >
+                        <a href="#" class="ft_item_link">Điều khoản</a>
+                    </li>
+                    <li  class="ft_item">
+                        <a href="#" class="ft_item_link">Cam kết chất lượng</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid_column">
+                <h3 class="ft_heading">Theo dõi</h3>
+                <ul class="ft_list">
+                    <li class="ft_item">
+                        <a href="https://www.facebook.com/" class="ft_item_link" target="_blank">
+                            <img class="ft_icon" src="/assets/imgs/facebook.png">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="ft_item" >
+                        <a href="#" class="ft_item_link">
+                            <img class="ft_icon" src="/assets/imgs/instagram.png" target="_blank">
+                            Instagram
+                        </a>
+                    </li>
+                    <li  class="ft_item">
+                        <a href="#" class="ft_item_link" target="_blank">
+                            <img class="ft_icon" src="/assets/imgs/youtube.png" >
+                            Youtube
+                        </a>
+                    </li>
+                    <li  class="ft_item">
+                        <a href="#" class="ft_item_link" target="_blank">
+                            <img class="ft_icon" src="/assets/imgs/tiktok.png" >
+                            Tiktok
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid_column">
+                <h3 class="ft_heading">Vào cửa hàng trên ứng dụng </h3>
+                <div>
+                    <a href="#" target="_blank">
+                        <img class="ft_download1" src="/assets/imgs/chplay.jpg">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" target="_blank">
+                        <img class="ft_download2" src="/assets/imgs/appstore.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ft_bottom">
+        <p class="ft_bottom_text"> 2024 - Bản quyền thuộc TUMP</p>
+    </div>
+    </footer>
+    <a href="#" id="up-top-button" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+      <ion-icon name="arrow-up-circle-outline" style="font-size: 40px;color:#89a7ce;"></ion-icon>
+  </a>
+  
+  <script>
+      var btn = document.getElementById('up-top-button');
+  
+      window.onscroll = function() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              btn.style.display = "block";
+          } else {
+              btn.style.display = "none";
+          }
+      };
+  
+      btn.onclick = function() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      };
+  </script>
+<!--end Footer-->
+<script src="user.js"></script>
+<script src="/public/product2.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

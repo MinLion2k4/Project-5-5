@@ -1,0 +1,99 @@
+
+    [
+        {
+            "id" : "1",
+            "Name": "Ghe Xanh",
+            "Price": "300000",
+            "img" :"/assets/img/ghẹ.jpeg"
+        },
+        {
+            "id" : "2",
+            "Name": "Cua Gạch",
+            "Price": "250000",
+            "img" :"/assets/img/cua gạch.webp"
+        },
+        {
+            "id" : "3",
+            "Name": "Cua Hoàng Đế",
+            "Price": "2700000",
+            "img" :"/assets/img/cua-hoang-de.jpg"
+        },
+        {
+            "id" : "4",
+            "Name": "Cua Thịt Cà Mau",
+            "Price": "300000",
+            "img" :"/assets/img/cua-thit-ca-mau.jpg"
+        },
+        {
+            "id" : "5",
+            "Name": "Tôm Càng Xanh",
+            "Price": "370000",
+            "img" :"/assets/img/tôm càng xanh.webp"
+        },
+        {
+            "id" : "6",
+            "Name": "Tôm Hùm Alaska",
+            "Price": "600000",
+            "img" :"/assets/img/tôm hùm alaska.jpg"
+        },
+        {
+            "id" : "7",
+            "Name": "Tôm Hùm Xanh",
+            "Price": "370000",
+            "img" :"/assets/img/tôm hùm xanh.jpg"
+        },
+        {
+            "id" : "8",
+            "Name": "Bọ Biển",
+            "Price": "525000",
+            "img" :"/assets/img/Bọ biển.jpg"
+        },
+        {
+            "id" : "9",
+            "Name": "Cá Bớp",
+            "Price": "300000",
+            "img" :"/assets/img/cá bớp2.jpg"
+        },
+        {
+            "id" : "10",
+            "Name": "Cá Trứng Nauy",
+            "Price": "250.000",
+            "img" :"/assets/img/cá trứng nauy.webp"
+        },
+        {
+            "id" : "11",
+            "Name": "Mực Trứng",
+            "Price": "250000",
+            "img" :"/assets/img/mực trứng.jpg"
+        },
+        {
+            "id" : "12",
+            "Name": "Mực Ống Loại 1",
+            "Price": "230000",
+            "img" :"/assets/img/mực ống loại 1.jpg"
+        },
+        {
+            "id" : "13",
+            "Name": "Hàu",
+            "Price": "250000",
+            "img" :"/assets/img/hàu.jpg"
+        },
+        {
+            "id" : "14",
+            "Name": "Nghêu Trắng",
+            "Price": "120000",
+            "img" :"/assets/img/Nghêu trắng.png"
+        },
+        {
+            "id" : "15",
+            "Name": "Ốc Đinh",
+            "Price": "120000",
+            "img" :"/assets/img/ốc đinh2.jpg"
+        },
+        {
+            "id" : "16",
+            "Name": "Bào ngư",
+            "Price": "200000",
+            "img" :"/assets/img/bào ngư.jpg"
+        }
+    ]
