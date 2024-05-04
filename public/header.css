@@ -356,11 +356,11 @@ header .iconsH #menu-bars {
 }
 
 .col.col2 {
-  background-image: url("/assets/imgs/n3.jpg");
+  background-image: url("../assets/imgs/n3.jpg");
 }
 
 .col.col3 {
-  background-image: url("/assets/imgs/n2.jpg");
+  background-image: url("../assets/imgs/n2.jpg");
 }
 
 .row.row-cols-2.row-cols-md-2.g-4.py-5 h4 {
@@ -401,15 +401,15 @@ header .iconsH #menu-bars {
   margin-top: -30px;
 }
 .col.col4 {
-  background-image: url("/assets/imgs/n2-1.jpg");
+  background-image: url("../assets/imgs/n2-1.jpg");
 }
 
 .col.col5 {
-  background-image: url("/assets/imgs/n1.jpg");
+  background-image: url("../assets/imgs/n1.jpg");
 }
 
 .col.col6 {
-  background-image: url("/assets/imgs/n5.jpg");
+  background-image: url("../assets/imgs/n5.jpg");
 }
 
 .row.row-cols-3.row-cols-md-3.g-4.py-5 h2 {
