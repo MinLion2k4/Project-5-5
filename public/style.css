@@ -30,12 +30,12 @@
 .text-hero h4{
     padding-bottom: 15px;
     font-size: 80px ;
-    font-family: "Pacifico", cursive;
+    font-family: "Nunito", sans-serif;
 }
 .text-hero h2{
     font-weight: bolder;
     padding: 10px; 
-    font-family: "Lemonada", cursive;
+    font-family: "NuNunito", sans-serif;
     font-optical-sizing: auto;
     font-size: 30px; 
     text-shadow: 2px 2px 10px #ffffff;
