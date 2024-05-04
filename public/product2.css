@@ -68,6 +68,7 @@ body{
     background: rgba(0,0,0,.1);
     color: white;
 }
+/*product*/
 .row{
     margin-top: -35px;
 }
@@ -126,6 +127,9 @@ h3,h5{
     color: #343a40;
     font-size: large;
     font-weight: bolder;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 /*Cart*/
 #cart-container table{

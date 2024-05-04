@@ -1,78 +1,78 @@
-#table-admin thead{
-    background-color: #f8f9fa;
-    color: #495057;
-    border: 1px solid #dee2e6;
-    text-align: center;
-    font-family: 'Nunito', sans-serif ;
-    font-size: 1.5em;
+#table-admin thead {
+  background-color: #f8f9fa;
+  color: #495057;
+  border: 1px solid #dee2e6;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5em;
 }
-#table-admin tbody td{
-    text-align: center;
-    font-family: 'Nunito', sans-serif ;
-    font-size: 1.5em;
-    font-weight: 700;
-    border-bottom: .1px solid #ccc;
-}
-
-#table-admin tbody td img{
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
+#table-admin tbody td {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  border-bottom: 0.1px solid #ccc;
 }
 
-#table-admin tbody td p{
-    position: relative;
-    top: 30px;
+#table-admin tbody td img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
 }
 
-#table-admin tbody td button{
-    position: relative;
-    top: 25px;
-    font-size: 1em;
-    font-weight: 700;
-}
-#table-admin tbody th{
-    position: relative;
-    top: 30px;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: 700;
-    background: none;
+#table-admin tbody td p {
+  position: relative;
+  top: 30px;
 }
 
-#addProductForm{
-    width: 30%;
-    height: 30%;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #dee2e6;
-    border-radius: 10px;
-    background-color: #f8f9fa;
-    font-family: 'Nunito', sans-serif ;
+#table-admin tbody td button {
+  position: relative;
+  top: 25px;
+  font-size: 1em;
+  font-weight: 700;
 }
-#addProductForm h2{
-    position: relative;
-    top: -6%;
-    text-align: center;
-    font-size: 2em;
-    font-weight: 700;
+#table-admin tbody th {
+  position: relative;
+  top: 30px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  background: none;
 }
-#addProductForm input{
-    width: 100%;
-    border: 0.5px solid #dee2e6;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
+
+#addProductForm {
+  width: 30%;
+  height: 30%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  font-family: "Nunito", sans-serif;
 }
-#addProductForm button{
-    width: 100%;
-    border: 0.5px solid #dee2e6;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
-    background-color: #343a40;
-    color: #fff;
-    font-family: 'Nunito', sans-serif ;
-    font-size: 1.5em;
-    font-weight: 700;
+#addProductForm h2 {
+  position: relative;
+  top: -6%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+}
+#addProductForm input {
+  width: 100%;
+  border: 0.5px solid #dee2e6;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+#addProductForm button {
+  width: 100%;
+  border: 0.5px solid #dee2e6;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  background-color: #343a40;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
 }
