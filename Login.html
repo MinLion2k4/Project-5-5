@@ -21,12 +21,12 @@
   <body>
     <header>
       <!--Header Section-->
-      <a href="Home.html" class="logo"
+      <a href="index.html" class="logo"
         ><img src="assets/imgs/logo6.png" alt="" /> TUMTH</a
       >
 
       <nav class="navbar">
-        <a href="home.html" class="active">Trang chủ</a>
+        <a href="index.html" class="active">Trang chủ</a>
         <a href="product2.html">Sản Phẩm</a>
         <a href="#">Tin tức</a>
         <a href="#">Liên Hệ</a>
@@ -164,7 +164,7 @@
           alert("Đăng nhập thành công");
           localStorage.setItem("user", JSON.stringify(user));
           if (user.admin) {
-            window.location.href = "home.html";
+            window.location.href = "index.html";
           } else {
             window.location.href = "/user/uhome.html";
           }
